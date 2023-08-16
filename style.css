@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container{
+    min-height: 120vh;
+    max-width: 100vw;
+}
+.left{
+    height: 25vh;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+/* card front design */
+.card-front{
+    max-height: 6rem;
+    max-width: 12rem;
+    padding: 15px;
+    color: white;
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+
+    transform: translate(20vw,13vh);
+}
+.card-front img{
+    width: 2.5rem;
+    margin-bottom: 2rem;
+}
+.card-front h3{
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+.card-front .details{
+    font-weight: 500;
+    font-size: 0.4rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-self: flex-end;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+/* card back design */
+.card-back{
+    color: white;
+    height: 8rem;
+    width:14rem;
+    background-image: url(images/bg-card-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    transform: translate(30vw,-19vh);
+}
+.card-back p{
+    transform: translate(-1.5rem,-0.1rem);
+}
+
+/* right */
+.right{
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    padding-top: 5rem;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right .box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.right .box input{
+    text-indent: 1rem;
+    height: 2rem;
+    border-style: solid;
+    border-color: hsl(270, 3%, 87%);
+    border-radius: 4px;
+}
+.right .box ::placeholder{
+    color: hsl(270, 3%, 87%);
+    text-indent: 1rem;
+    font-size: 1.1rem;
+}
+.right .box label{
+    margin-bottom: 0.5rem;
+}
+.right .box-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right .box-3{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.right .box-4{
+    display: flex;
+    flex-direction: row;
+}
+.right .box-4 input{
+    min-width: 2rem;
+    margin-right: 0.3rem;
+}
+.right button{
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 3rem;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+}
+
+/* web UI */
+@media(min-width:500px){
+    .right .box{
+        width: 60%;
+    }
+}

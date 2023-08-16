@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -16,37 +19,53 @@
   </style>
 </head>
 <body>
+<main>
+    <div class="container">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+      <div class="left">
+        <div class="card-front">
+          <img src="images/card-logo.svg" alt="card-logo">
+            <div class="details-2">
+              <h3 id="card-num">0000 0000 0000 0000</h3>
+              <div class="details"><span id="cardholder-name">Jane Appleseed</span><span id="exp-date">00/00</span></div>
+            </div>
+        </div>
+        <div class="card-back">
+          <p>000</p>
+        </div>
+      </div>
+      
+      <div class="right">
+        <div class="box">
+          <label for="cardholder-name">CARDHOLDER NAME</label>
+          <input type="text" id="cardholder-name" placeholder="e.g. Jane Appleseed">
+        </div>
+        <div class="box">
+          <label for="card-number">CARD NUMBER</label>
+          <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="box box-2">
+          <div class="box-3">
+            <label for="exp-month exp-year">EXP. DATE (MM/YY)</label>
+            <div class="box-4">
+              <input type="number" id="exp-month" placeholder="MM">
+              <input type="number" id="exp-year" placeholder="YY">
+            </div>
+          </div>
+          <div class="box-3">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+        <div class="box"><button>Confirm</button></div>
+      </div>
+    </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+</main>
 </body>
 </html>
