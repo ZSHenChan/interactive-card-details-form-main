@@ -70,7 +70,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    transform: translate(30vw,-19vh);
+    transform: translate(30vw,-14vh);
 }
 .card-back p{
     transform: translate(-1.5rem,-0.1rem);
@@ -87,10 +87,18 @@
     justify-content: center;
     align-items: center;
 }
-.right .box{
-    width: 80%;
+.right form{
+    width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right .box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 2rem;
 }
 .right .box input{
@@ -135,9 +143,35 @@
     background-color: hsl(278, 68%, 11%);
 }
 
+/* complete page */
+.complete-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.complete-box img{
+    max-width: 4rem;
+    margin-bottom: 2rem;
+}
+.complete-box h3{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.complete-box p{
+    font-size: 0.9rem;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 2rem;
+}
+.complete-box button{
+    width: 120%;
+    min-height: 2rem;
+    color: hsl(279, 6%, 55%);
+}
+
 /* web UI */
 @media(min-width:500px){
     .right .box{
-        width: 60%;
+        max-width: 70%;
     }
 }
