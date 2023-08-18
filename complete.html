@@ -40,7 +40,7 @@
             <img src="images/icon-complete.svg" alt="complete-icon">
             <h3>THANK YOU!</h3>
             <p>We've added your card details</p>
-            <button onclick="location.href = 'index.html';">Continue</button>
+            <div class="box"><button onclick="location.href = 'index.html';">Continue</button></div>
         </div>
     </div>
   
@@ -51,4 +51,16 @@
     </div>
 </main>
 </body>
+
+<script>
+  const cardHolderNameDisplay = localStorage.getItem("userName");
+  const cardNumberDisplay = localStorage.getItem("userCardNum");
+  const expDateDisplay = localStorage.getItem("exp-date");
+  const cvcDisplay = localStorage.getItem("cvc");
+
+  document.getElementById("cardholder-name-display").textContent = cardHolderNameDisplay;
+  document.getElementById("card-number-display").textContent = cardNumberDisplay;
+  document.getElementById("exp-date-display").textContent = expDateDisplay;
+  document.getElementById("cvc-display").textContent = cvcDisplay;
+</script>
 </html>

@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-<script src="js.js"></script>
 
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -44,22 +43,23 @@
           </div>
           <div class="box">
             <label for="card-number">CARD NUMBER</label>
-            <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000">
+            <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" id="card-num-input">
+            <p id="error-msg">Wrong Format. Numbers only</p>
           </div>
           <div class="box box-2">
             <div class="box-3">
               <label for="exp-month exp-year">EXP. DATE (MM/YY)</label>
               <div class="box-4">
-                <input type="number" id="exp-month" placeholder="MM">
-                <input type="number" id="exp-year" placeholder="YY">
+                <input type="number" id="exp-month" placeholder="MM" required>
+                <input type="number" id="exp-year" placeholder="YY" required>
               </div>
             </div>
             <div class="box-3">
               <label for="cvc">CVC</label>
-              <input type="number" id="cvc" placeholder="e.g. 123">
+              <input type="number" id="cvc" placeholder="e.g. 123"  required>
             </div>
           </div>
-          <div class="box"><button type="submit">Confirm</button></div>
+          <div class="box"><button type="submit" action="complete.html">Confirm</button></div>
         </form>
       </div>
     </div>
@@ -71,4 +71,7 @@
     </div>
 </main>
 </body>
+
+<script src="js.js"></script>
+
 </html>

@@ -70,7 +70,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    transform: translate(30vw,-14vh);
+    transform: translate(30vw,-16vh);
 }
 .card-back p{
     transform: translate(-1.5rem,-0.1rem);
@@ -108,6 +108,11 @@
     border-color: hsl(270, 3%, 87%);
     border-radius: 4px;
 }
+.right  #error-msg{
+    color: red;
+    margin-top: 0.5rem;
+    display: none;
+}
 .right .box ::placeholder{
     color: hsl(270, 3%, 87%);
     text-indent: 1rem;
@@ -141,6 +146,7 @@
     height: 3rem;
     border: none;
     background-color: hsl(278, 68%, 11%);
+    width: 100%;
 }
 
 /* complete page */
@@ -164,9 +170,15 @@
     margin-bottom: 2rem;
 }
 .complete-box button{
+    align-self: center;
     width: 120%;
     min-height: 2rem;
     color: hsl(279, 6%, 55%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
 
 /* web UI */
