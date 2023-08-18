@@ -187,3 +187,34 @@ input::-webkit-inner-spin-button{
         max-width: 70%;
     }
 }
+
+@media(min-width:700px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        width: 50%;
+    }
+    .right{
+        width: 100%;
+        padding: 0;
+        padding-left: 6vw;
+        height: 100vh;
+    }
+    .card-front{
+        transform: translate(8vw,-5vh);
+        min-height: 7rem;
+        min-width: 14rem;
+    }
+    .card-back{
+        transform: translate(13vw,-3vh);
+        height: 9rem;
+        width: 16rem;
+    }
+}

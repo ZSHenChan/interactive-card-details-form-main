@@ -1,11 +1,9 @@
 const form = document.getElementById("form");
-const errorMsg = document.getElementById("error-msg");
-const cardNumInput = document.getElementById("card-num-input");
 
 function validCardNum(){
-    if (cardNumInput.match(/[0-9]{4}[\s][0-9]{4}[\s][0-9]{4}[\s][0-9]{4}$/)){
-        errorMsg.style.display="none";
-        cardNumInput.style.borderColor="hsl(270, 3%, 87%)";
+    const errorMsg = document.getElementById("error-msg");
+    const cardNumInput = document.getElementById("card-number");
+    if (cardNumInput.value.match(/[0-9]{4}[\s][0-9]{4}[\s][0-9]{4}[\s][0-9]{4}$/)){
         return true;
     }
     else{
