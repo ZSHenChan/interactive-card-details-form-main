@@ -217,4 +217,10 @@ input::-webkit-inner-spin-button{
         height: 9rem;
         width: 16rem;
     }
+    .card-front img{
+        margin-bottom: 2.8rem;
+    }
+    .card-front h3{
+        font-size: 0.9rem;
+    }
 }
